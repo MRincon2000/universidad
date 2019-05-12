@@ -16,6 +16,7 @@ public class Module {
     public Module(String l, String n){
         this.lecturer=l;
         this.name=n;
+        this.grades=new ArrayList<>();
     }
 
     public String getLecturer() {
@@ -35,7 +36,7 @@ public class Module {
     }
     
 public void añadirGrade(Grade g){
-    this.grades=new ArrayList<>();
+    
     this.grades.add(g);
     g.setModule(this);
 }
